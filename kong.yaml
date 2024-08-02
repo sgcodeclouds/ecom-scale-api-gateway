@@ -1,0 +1,16 @@
+_format_version: "2.1"
+_transform: true
+
+services:
+- name: auth-service
+  url: https://ecom-scale-auth.onrender.com
+  routes:
+  - name: auth-routes
+    paths:
+    - /auth
+- name: cart-service
+  url: https://ecom-scale-cart.onrender.com
+  routes:
+  - name: cart-routes
+    paths:
+    - /cart
